@@ -10,4 +10,4 @@ def hey(num):
       caps += str(txt[0][a])
     line += str(txt[0][a])
   return line, caps
-print(hey(1000))
+print(hey(10000))
