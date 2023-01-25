@@ -1,0 +1,13 @@
+txt = ["Github Classroom and Your First Repo Description Today you will get into GitHub Classroom and create your first repository. GitHub Classroom Yesterday you created your github account, today you will link that account to our classroom. You should have received an email yesterday from GitHub Classroom for you to link your github account. Follow the instructions and make sure you are linking the proper account. If you cannot figure this out, ask a neighbor who has. If you did this successfully, then please ask your table if you can help anyone else. I can help on Wednesday if you do not link your account successfully. Your first repo GitHub has a lot of good tutorials to teach you the basics of github. I would like you to work through the following tutorial to create your first repo. Tomorrow at the beginning of class I will check to see that you have created the repository, made a branch with a pull request and help you with anything that you did not understand. Try your best and ask your neighbor for help. Well walk through the process tomorrow. If you finish this tutorial, move on to the Create a Repo tutorial. It is similar to this one but will explain more in depth about repositories."]
+
+from random import randint as ri
+def hey(num):
+  line = ''
+  caps = ''
+  for x in range(int(num)):
+    a = ri(1,1000)
+    if str(txt[0][a]).islower() == False and str(txt[0][a]) != '.' and str(txt[0][a]) != ',' and str(txt[0][a]) != ' ':
+      caps += str(txt[0][a])
+    line += str(txt[0][a])
+  return line, caps
+print(hey(1000))
